@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "Maragsa";
+	src: url("../fonts/Maragsâ-Display.otf");
+}
+
+/* Text Styles */
+
+h1 {
+    font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 64px;
+    color: white;
+}
+
+h2 {
+    font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 56px;
+    color: white;
+}
+
+h3 {
+    font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 48px;
+    color: white;
+}
+
+h4 {
+  font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 36px;
+  color: white;
+}
+
+h5 {
+  font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 27px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: white;
+  line-height: 56px;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color: white;
+    line-height: 42px;
+}
+
+/* Site-Wide */
+
+body {
+    background-color: black;
+}
+
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-no-border {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 4px;
+    background: none;
+    border: none;
+    padding: 15px 32px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-no-border span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-no-border span:after {
+    content: url(../images/personal-brand/icons\ -\ white/right-arrow.png);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -100px;
+    transition: 0.5s;
+  }
+
+  .btn-no-border:hover span {
+    padding-right: 70px;
+  }
+  
+  .btn-no-border:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  label {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .text-bg {
+    background-color: #1F1F1F;
+    padding: 50px;
+  }
+
+/* TOP NAVIGATION */
+
+.container {
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+ #nav-logo {
+    -webkit-box-ordinal-group: 2;
+            order: 1;
+    padding: 24px;
+    padding-bottom: 2px;
+  }
+
+  #nav-item-active {
+    border-bottom: 2px solid #f905f6;
+    transform: translateY(-5px);
+  }
+
+  .nav-item {
+    padding: 24px;
+    padding-bottom: 2px;
+    font-size: 18px;
+  }
+  .nav-item:hover{
+      text-decoration: none;
+      color: white;
+      transition: all 0.2s;
+      transform: translateY(-5px);
+  }  
+
+  .nav-text:hover{
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s;
+    transform: translateY(-5px);
+}  
+
+  .nav-text:hover::after {
+    content: "";
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+    border: 1px solid #f905f6;
+  }
+
+  .nav-item:nth-of-type(n+4) {
+    -webkit-box-ordinal-group: 3;
+            order: 2;
+  }
+
+  /* Hero Section */
+
+  .hero {
+      text-align: center;
+      padding: 20px;
+      margin: 120px;
+  }
+
+  #hero-title {
+    font-size: 96px;
+  }
+
+  /* Recent Work Section */
+
+  .recent-work {
+      padding: 100px;
+  }
+
+  .recent-work button {
+      clear: both;
+  }
+
+  /* Services Section */
+
+  .services {
+      padding: 100px;
+  }
+
+  .services li {
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      list-style: none;
+      font-weight: 600;
+      font-size: 27px;
+      line-height: 38px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+  }
+
+  /* Contact Form */
+
+  .mail-form-container {
+      background-color: #1F1F1F;
+      padding: 100px;
+      margin: 100px 0px 100px 0px;
+  }
+
+  .form-control {
+    border: none;
+    outline: none;
+    border-radius: 0%;
+    color: black;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+
+ #submit-btn {
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid white;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding: 5px;
+    width: 25%;
+    margin: auto;
+  }
+
+  #submit-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+
+  /* Work Section */
+
+  .work {
+    margin: 50px 180px 50px 180px;
+  }
+
+ #work-nav {
+    display: flex;
+  }
+
+.btn-work-nav {
+  background: none;
+  border: none;
+  color: rgb(172, 172, 172);
+  font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 48px;
+  margin: 18px;
+}
+
+.btn-work-nav.active {
+  color: white;
+  text-decoration: underline;
+}
+
+/* About */
+
+.about-me {
+  margin: 100px;
+}
+
+.credits {
+  margin: 100px;
+}
+
+/* Contact */
+
+.contact-me {
+  padding: 100px;
+}
+
+/* Footer */
+
+  footer {
+      text-align: center;
+      margin: 30px;
+  }
+
+  #footer-text {
+    font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: -5px;
+  }
+
+  footer p {
+      font-size: 20px;
+  }
+
+  .footer-icons {
+      margin: auto;
+      padding: 12px;
+  }
+
+  /* Media Queries */
+
+
+  @media all and (max-width: 800px) {
+    .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: stretch;
+              align-items: stretch;
+    }
+    #nav-logo {
+      -webkit-box-ordinal-group: 1;
+              order: 0;
+      text-align: center;
+      width: 100px;
+      margin: auto auto 20px;
+    }
+    .nav-item {
+      text-align: center;
+      border-bottom: 1px solid #111;
+    }
+  }
