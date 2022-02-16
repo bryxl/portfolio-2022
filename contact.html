@@ -11,58 +11,76 @@
 
     <body>
 
-        <header>
-            <nav class="container">
-                <div id="nav-logo">
-                    <a href="index.html">
-                        <img src="images/personal-brand/icons - white/logo.png" alt="Home" style="max-height: 45px;">
-                    </a>
-                </div>
-                <a href="work.html" class="nav-item nav-text">Work</a>
-                <a href="about.html" class="nav-item nav-text">About</a>
-                <a href="contact.html" class="nav-item" id="nav-item-active">Contact</a>
-                <a href="https://www.instagram.com/yan.yan.designs/" class="nav-item" target="_blank">
-                    <img src="images/personal-brand/icons - white/instagram.png" alt="Instagram">
-                </a>
-                <a href="https://www.behance.net/delossanto3cea/moodboards" class="nav-item" target="_blank">
-                    <img src="images/personal-brand/icons - white/behance.png" alt="Behance">
-                </a>
-                <a href="https://www.linkedin.com/in/brianne-de-los-santos/" class="nav-item" target="_blank">
-                    <img src="images/personal-brand/icons - white/linkedin.png" alt="LinkedIn">
-                </a>
-            </nav>
-        </header>
+        <nav class="navbar navbar-expand-lg">
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="work.html">Work</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item-active">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+            </div>
+            <a href="index.html" class="navbar-brand">
+                <img src="images/personal-brand/icons - white/logo.png" alt="Home" class="img-fluid nav-logo">
+            </a>
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/yan.yan.designs/" target="_blank">
+                            <img src="images/personal-brand/icons - white/instagram.png" alt="Instagram">
+                        </a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.behance.net/delossanto3cea/moodboards" target="_blank">
+                            <img src="images/personal-brand/icons - white/behance.png" alt="Behance">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/brianne-de-los-santos/" target="_blank">
+                            <img src="images/personal-brand/icons - white/linkedin.png" alt="LinkedIn">
+                        </a>
+                      </li>
+                  </ul>
+            </div>
+        </nav>
 
         <section class="contact-me">
             <h1>Contact Me</h1>
             <hr size="5px" width="100%" color="white" style="margin-bottom: 2%;">
-            <div class="mail-form-container">
-                <div class="mail-form">
-                    <h3>Interested in Working Together?</h3>
-                    <p>Drop a message at <a class="text-link">brianne.xeline@icloud.com</a> or fill out the form below.</p>
-                    <form id="contact-form" method="post" action="contact-form-handler.php">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <label>Your Name</label>
-                                <input name="name" type="texåt" class="form-control" placeholder="Ex: 'John Smith'" required>
-                                <br>
+
+            <div class="row">
+                <div class="mail-form-container col-lg-8 mr-auto ml-auto">
+                    <div class="mail-form">
+                        <h3>Interested in Working Together?</h3>
+                        <p>I am currently <em>unavailable</em> to work on freelance projects. For any other inquiries, drop a message at <a class="text-link">brianne.xeline@icloud.com</a> or fill out the form below.</p>
+                        <form id="contact-form" method="post" action="contact-form-handler.php">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>Your Name</label>
+                                    <input name="name" type="texåt" class="form-control" placeholder="Ex: 'John Smith'" required>
+                                    <br>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label>Your Email</label>
+                                    <input name="email" type="email" class="form-control" placeholder="Ex: j.smith@gmail.com" required>
+                                    <br>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <label>Your Email</label>
-                                <input name="email" type="email" class="form-control" placeholder="Ex: j.smith@gmail.com" required>
-                                <br>
-                            </div>
-                        </div>
-                        <label>Your Message</label>
-                        <textarea name="message" class="form-control" placeholder="'Wow this is such a great website!'" rows="4" required></textarea>
-                        <br>
-                        <input type="submit" class="form-control submit" id="submit-btn" value="SEND MESSAGE">
-                    </form>
+                            <label>Your Message</label>
+                            <textarea name="message" class="form-control" placeholder="'Wow this is such a great website!'" rows="4" required></textarea>
+                            <br>
+                            <input type="submit" class="form-control submit" id="submit-btn" value="SEND MESSAGE">
+                        </form>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        
+        </section>
 
         <footer>
             <hr size="5px" width="75%" color="white">

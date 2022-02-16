@@ -11,31 +11,47 @@
 
     <body>
 
-        <header>
-            <nav class="container">
-                <div id="nav-logo">
-                    <a href="index.html">
-                        <img src="images/personal-brand/icons - white/logo.png" alt="Home" style="max-height: 45px;">
-                    </a>
-                </div>
-                <a href="work.html" class="nav-item nav-text">Work</a>
-                <a href="about.html" class="nav-item nav-text">About</a>
-                <a href="contact.html" class="nav-item nav-text">Contact</a>
-                <a href="https://www.instagram.com/yan.yan.designs/" class="nav-item" target="_blank">
-                    <img src="images/personal-brand/icons - white/instagram.png" alt="Instagram">
-                </a>
-                <a href="https://www.behance.net/delossanto3cea/moodboards" class="nav-item" target="_blank">
-                    <img src="images/personal-brand/icons - white/behance.png" alt="Behance">
-                </a>
-                <a href="https://www.linkedin.com/in/brianne-de-los-santos/" class="nav-item" target="_blank">
-                    <img src="images/personal-brand/icons - white/linkedin.png" alt="LinkedIn">
-                </a>
-            </nav>
-        </header>
+        <nav class="navbar navbar-expand-lg">
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="work.html">Work</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+            </div>
+            <a href="index.html" class="navbar-brand">
+                <img src="images/personal-brand/icons - white/logo.png" alt="Home" class="img-fluid nav-logo">
+            </a>
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/yan.yan.designs/" target="_blank">
+                            <img src="images/personal-brand/icons - white/instagram.png" alt="Instagram">
+                        </a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.behance.net/delossanto3cea/moodboards" target="_blank">
+                            <img src="images/personal-brand/icons - white/behance.png" alt="Behance">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/brianne-de-los-santos/" target="_blank">
+                            <img src="images/personal-brand/icons - white/linkedin.png" alt="LinkedIn">
+                        </a>
+                      </li>
+                  </ul>
+            </div>
+        </nav>
         
         <section class="hero">
             <h1 id="hero-title">Brianne<span style="color: #f905f6;">'</span> De Los Santos</h1>
-            <p>Freelancer <img src="images/personal-brand/icons - pink/sparkle.png"> Designer & Illustrator <img src="images/personal-brand/icons - pink/sparkle.png"> Atlanta, GA</p>
+            <p>Freelancer <img src="images/personal-brand/icons - pink/sparkle.png" class="img-fluid" width="15px"> Designer & Illustrator <img src="images/personal-brand/icons - pink/sparkle.png" class="img-fluid" width="15px"> Atlanta, GA</p>
 
             <form action="work.html">
                 <button type="submit" class="btn-no-border"><span>My Work</span></button>
@@ -52,14 +68,14 @@
                     <img class="col-lg-8" alt="">
                 </div>
                 <div class="row">
-                    <img src="images/personal-brand/thumbnail/stromae.jpg" class="col-lg-7 img-fluid" alt="">
+                    <img src="images/personal-brand/thumbnail/stromae.jpg" class="col-lg-7 img-fluid" alt="Album Redesign">
                     <img class="col-lg-5" alt="">
                 </div>
             </div>
             <form action="work.html" style="text-align: right;">
                 <button type="submit" class="btn-no-border"><span>See All Work</span></button>
              </form>
-        </section>
+        </section>        
 
         <section class="services">
             <h2>Services</h2>
@@ -86,10 +102,34 @@
             </div>
         </section>
 
-        <section class="mail-form">
-            <h3>Interested in Working Together?</h3>
-            <p>Drop a message at <a class="text-link">brianne.xeline@icloud.com</a> or fill out the form below.</p>
-            <!-- form shit -->
+        <section class="mail-form-container">
+            <div class="row">
+                <div class="col-lg-5" style="background-color: #f905f6;">
+                    
+                </div>
+                <div class="col-lg-6 ml-auto">
+                    <h3>Interested in Working Together?</h3>
+                    <p>I am currently <em>unavailable</em> for freelance projects. For any other inquiries, drop a message at brianne.xeline@icloud.com or fill out the form below.</p>
+                    <form id="contact-form" method="post" action="contact-form-handler-index.php">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label>Your Name</label>
+                                <input name="name" type="texåt" class="form-control" placeholder="Ex: 'John Smith'" required>
+                                <br>
+                            </div>
+                            <div class="col-lg-6">
+                                <label>Your Email</label>
+                                <input name="email" type="email" class="form-control" placeholder="Ex: j.smith@gmail.com" required>
+                                <br>
+                            </div>
+                        </div>
+                        <label>Your Message</label>
+                        <textarea name="message" class="form-control" placeholder="'Wow this is such a great website!'" rows="4" required></textarea>
+                        <br>
+                        <input type="submit" class="form-control submit" id="submit-btn" value="SEND MESSAGE">
+                    </form>
+                </div>
+            </div>
         </section>
 
         <footer>

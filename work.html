@@ -11,27 +11,43 @@
 
     <body>
 
-        <header>
-            <nav class="container">
-                <div id="nav-logo">
-                    <a href="index.html">
-                        <img src="images/personal-brand/icons - white/logo.png" alt="Home" style="max-height: 45px;">
-                    </a>
-                </div>
-                <a href="work.html" class="nav-item" id="nav-item-active">Work</a>
-                <a href="about.html" class="nav-item nav-text">About</a>
-                <a href="contact.html" class="nav-item nav-text">Contact</a>
-                <a href="https://www.instagram.com/yan.yan.designs/" class="nav-item" target="_blank">
-                    <img src="images/personal-brand/icons - white/instagram.png" alt="Instagram">
-                </a>
-                <a href="https://www.behance.net/delossanto3cea/moodboards" class="nav-item" target="_blank">
-                    <img src="images/personal-brand/icons - white/behance.png" alt="Behance">
-                </a>
-                <a href="https://www.linkedin.com/in/brianne-de-los-santos/" class="nav-item" target="_blank">
-                    <img src="images/personal-brand/icons - white/linkedin.png" alt="LinkedIn">
-                </a>
-            </nav>
-        </header>
+        <nav class="navbar navbar-expand-lg">
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item-active">
+                        <a class="nav-link active" href="work.html">Work</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+            </div>
+            <a href="index.html" class="navbar-brand">
+                <img src="images/personal-brand/icons - white/logo.png" alt="Home" class="img-fluid nav-logo">
+            </a>
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/yan.yan.designs/" target="_blank">
+                            <img src="images/personal-brand/icons - white/instagram.png" alt="Instagram">
+                        </a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.behance.net/delossanto3cea/moodboards" target="_blank">
+                            <img src="images/personal-brand/icons - white/behance.png" alt="Behance">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/brianne-de-los-santos/" target="_blank">
+                            <img src="images/personal-brand/icons - white/linkedin.png" alt="LinkedIn">
+                        </a>
+                      </li>
+                  </ul>
+            </div>
+        </nav>
 
         <section class="work">
 
@@ -41,6 +57,49 @@
                 <button class="btn-work-nav" onclick="filterSelection('branding')">Branding</button>
                 <button class="btn-work-nav" onclick="filterSelection('illustration')">Illustration</button>
             </div>
+
+            <div class="work-container show">
+
+                <div class="filterDiv branding">
+                    <a href="stromae.html">
+                        <img class="img-fluid work-thumbnail-img" src="images/personal-brand/work/stromae.jpg" alt="Redesigned Album Cover of Stromae's Racine Carrée">
+                        <div class="middle">
+                            <img src="images/personal-brand/icons - white/eye.png" alt="View" class="view">
+                        </div>
+                        <p class="work-titles">Album Redesign | Branding</p>
+                    </a>
+                </div>
+
+                <div class="filterDiv ux">
+                    <a href="blindCat.html">
+                        <img class="img-fluid work-thumbnail-img" src="images/personal-brand/thumbnail/blindCat.png" alt="Blind Cat Rescue Website Redesign">
+                        <div class="middle">
+                            <img src="images/personal-brand/icons - white/eye.png" alt="View" class="view">
+                        </div>
+                        <p class="work-titles">Blind Cat Rescue | UX/UI</p>
+                    </a>
+                </div>
+
+                <div class="filterDiv branding">
+                    <a href="glass.html">
+                        <img class="img-fluid work-thumbnail-img" src="images/personal-brand/thumbnail/glass.png" alt="The World of Blown Glass Booklet">
+                        <div class="middle">
+                            <img src="images/personal-brand/icons - white/eye.png" alt="View" class="view">
+                        </div>
+                        <p class="work-titles">The World of Glass | Branding</p>
+                    </a>
+                </div>
+
+                <div class="filterDiv illustration">
+                    <a href="#">
+                        <img class="img-fluid work-thumbnail-img" src="images/personal-brand/thumbnail/para.png" alt="Jeepney Poster Series">
+                        <div class="middle">
+                            <img src="images/personal-brand/icons - white/eye.png" alt="View" class="view">
+                        </div>
+                        <p class="work-titles">Para! | Illustration</p>
+                    </a>
+                </div>
+
 
         </section>
         
@@ -60,9 +119,10 @@
             </a>
         </footer>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 
     </body>
 
