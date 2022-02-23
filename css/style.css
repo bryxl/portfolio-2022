@@ -439,12 +439,6 @@ a:hover {
   margin: 100px;
 }
 
-/* Contact */
-
-.contact-me {
-  padding: 100px;
-}
-
 /* Footer */
 
   footer {
@@ -471,7 +465,7 @@ a:hover {
   /* Media Queries */
 
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1024px) {
     /* For tablets: */
     
 
@@ -584,26 +578,6 @@ a:hover {
       letter-spacing: 2px;
   }
 
-    /* Contact Form */
-
-    .mail-form-container {
-      background-color: #1F1F1F;
-      padding: 40px;
-      margin: 80px 0px 100px 0px;
-  }
-
-
- #submit-btn {
-    border: 2px solid white;
-    font-weight: 600;
-    font-size: 20px;
-    letter-spacing: 4px;
-    padding: 5px;
-    width: 100%;
-    margin: auto;
-    margin-top: 8px;
-  }
-
   /* Work */
 
   .work {
@@ -638,7 +612,7 @@ a:hover {
 /* Work Pages */
 
 .work-hero {
-  padding: 0px 0px 0px 0px;
+  padding: 2px 2px 2px 2px;
 }
 
 .work-summary {
